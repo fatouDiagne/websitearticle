@@ -1,0 +1,170 @@
+.entete{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    /*border-style: ;*/
+    background-color:rgb(0 0 0 / 9%);
+    position: absolute;
+    width: 1250px;
+    height: 50px;
+}
+
+.corps{
+    border-width: 0px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(0 0 0 / 9%);
+    position: absolute;
+    width: 1250px;
+    height: 1700px;
+    top:60px
+}
+.lienimage{
+        
+    left: 500px;
+    top: 15px;
+}
+.entete a img{
+    margin-top: 6px;
+    margin-left: 10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.h1style{
+    color: blue;
+}
+.entete a{
+        border-width: 1px;
+        border-color: rgb(240, 236, 236);
+        background-color: ;
+        text-decoration: none;
+        color:blue;
+        position: relative;
+        left: 20px;
+        margin-right: 25px;
+        top: 10px;
+        left: 700px;
+        font-size:20px;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.entete a:visited {
+    
+    color:rgb(223, 31, 137);
+}    
+
+.lienimage{
+        
+        left: 500px;
+        top: 15px;
+}
+.contentimage1{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: relative;
+    left: 200px;
+    top: 5px;
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin-right: 100px;
+    margin-bottom:30px;
+    /*white-space: nowrap;*/
+} 
+
+.contentimage2{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: absolute;
+    left: 450px;
+    top: 70px;
+    width: 358px;
+    height: 257px;
+    z-index: 11;
+} 
+
+.contentimage3{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: absolute;
+    left: 850px;
+    top: 70px;
+    width: 358px;
+    height: 257px;
+    z-index: 11;
+  
+} 
+.contentimage4{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: absolute;
+    left: 40px;
+    top: 400px;
+    width: 358px;
+    height: 257px;
+    z-index: 11;
+} 
+
+.contentimage5{ 
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: absolute;
+    left: 450px;
+    top: 400px;
+    width: 358px;
+    height: 257px;
+    z-index: 11;
+  
+} 
+.contentimage6{
+    
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(253, 249, 249);
+    position: absolute;
+    left: 850px;
+    top: 400px;
+    width: 358px;
+    height: 257px;
+    z-index: 11;
+  
+} 
+
+.lien{
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(249, 245, 245);
+  position: absolute;
+  left: 250px;
+  top: 10px;
+  width: 200px;
+  height: 100px;
+  z-index: 1px;
+}
+
+.lien1{
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(249, 245, 245);
+  position: absolute;
+  /*left: 250px;
+  top: 1px;*/
+  width: 200px;
+  height: 50px;
+  z-index: 11px;
+}
