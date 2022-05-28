@@ -31,29 +31,32 @@
     height: 40px;
 }
 
-.h1style{
-    color: blue;
-}
-.entete a{
-        border-width: 1px;
-        border-color: rgb(240, 236, 236);
-        background-color: ;
-        text-decoration: none;
-        color:blue;
-        position: relative;
-        left: 20px;
-        margin-right: 25px;
-        top: 10px;
-        left: 700px;
-        font-size:20px;
-        text-transform: uppercase;
-        font-weight: bold;
+.entete  a {
+    border-width: 1px;
+    border-color: rgb(240, 236, 236);
+    background-color: ;
+    text-decoration: none;
+    color:blue;
+    position: relative;
+    left: 20px;
+    margin-right: 25px;
+    top: 10px;
+    left: 560px;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .entete a:visited {
-    
-    color:rgb(223, 31, 137);
-}    
+
+color:rgb(223, 31, 137);
+}   
+
+.h1style{
+    color: blue;
+}
+
+ 
 
 .lienimage{
         

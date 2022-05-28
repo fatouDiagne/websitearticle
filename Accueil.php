@@ -38,34 +38,38 @@
     require 'Connexion.php'
     ?>
     <div class="entete">
+    <a href="./Accueil.php"> <img src="./logo.jpg" alt="" /> </a>
 
+     
 
-        <a href="./Accueil.php"><img src="./logo.jpg" alt=""/></a>
-        <a href="./Sante.php" class="lienimage">Sante</a>
+        <?php
+            for($i=1; $i<=sizeof($resultCate);$i++) {
+                echo " <a href=\"pages.php?article_id=".$resultCate[$i-1]->id."\">". $resultCate[$i-1]->libelle."</a>";
+            }
+        ?>
+        
+        <!--a href="./Sante.php" class="lienimage">Sante</a>
         <a href="./Sport.php" class='lienimage'>Sport</a>
         <a href="./Education" class='lienimage'>Education</a>
-        <a href="./Politique" class='lienimage'>Politique</a>
+        <a href="./Politique" class='lienimage'>Politique</a-->
     </div>
+
         <div class="corps">
             <h1 class="h1style"><marquee><b>Bienvenue sur le site de l'actualité de l'ESP</b></marquee></h1>
-            
             <?php 
                     for($i=1; $i <= sizeof($result); $i++) {
                     
             ?>            
-            <!--div class="col-lg-4 col-md-6 mb-5">
-            <div class="position-relative mb-4">        
-                <a href = #>
-                        <p><!--?php echo $result[$i-1]->titre;?--></p>
-                </a>
-             </div-->
+            <div class="col-lg-4 col-md-6 mb-5">
+
                 <div class="contentimage1">
-                    <h1><?php echo $result[$i-1]->titre;?></p></h1>
-                    <p><?php echo $result[$i-1]->contenu;?></p>
-                </div>   
+                    <h1> <?php echo $result[$i-1]->titre;?>  </h1>
+                    <p>  <?php echo $result[$i-1]->contenu;?> </p>
+                </div>
+
                     <!--div class="contentimage3">
                         <a href=#>
-                            <p><//?php echo $rows['contenu'];?></p>
+                            <p><!--?php echo $rows['contenu'];?></p>
                         </a>
                     </div>   
                     <div class="contentimage4">
@@ -83,10 +87,13 @@
                             <p><//?php echo $rows['contenu'];?></p>
                         </a>
                     </div--> 
+
             <?php
                 }
-            ?> 
+            ?>
+
              </div> 
-             </div>
+
+            </div>
     </body>
 </html>

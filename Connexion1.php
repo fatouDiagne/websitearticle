@@ -1,18 +1,29 @@
 <?php
-        $user='root';
-        $password='';
+$servername = "localhost";
+$username = "root";
+$password = "";
 
-        $database= 'mglsi_news';
-        $servername ='localhost:3306';
-        $conn = new mysqli($servername, $user, $password, $database);
+try {
+       $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+       $pdo_options[PDO::ATTR_EMULATE_PREPARES] = false;
+       $pdo_options[PDO::ATTR_DEFAULT_FETCH_MODE] = PDO::FETCH_OBJ;
+       $conn = new PDO("mysql:host=$servername;dbname=mglsi_news", $username, $password,$pdo_options);
+        
+       $resultCath = $conn->prepare("SELECT * FROM categorie ");
+     
+       $resultCath->execute();
+       $resultCath = $resultCath->fetchAll(); 
+     
+     
+       $article_id = $_GET["article_id"];
+       
+       $result = $conn->prepare("SELECT * FROM article WHERE article.categorie=:x");
+       $result->bindParam('x', $article_id);
+     
+       $result->execute();
+       $result = $result->fetchAll(); 
 
-        if ($mysqli->connect_error) {
-        die('Connect Error (' .
-            $conn->connect_errno . ') '.
-            $mysqli->connect_errno);
-        }   
-        $sql = "SELECT * FROM  article, categorie where libelle='Santé'";
-        $result1 = $conn->query($sql);
-        $conn->close();
-
-    ?>
+}  catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+  }       
+?>
