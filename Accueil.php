@@ -16,24 +16,7 @@
 	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
-    <!--?php
-        $user='root';
-        $password='';
-
-        $database= 'mglsi_news';
-        $servername ='localhost:3306';
-        //$conn = new mysqli($servername, $user, $password, $database);
-
-        if //($mysqli->connect_error) {
-        //die('Connect Error (' .
-            $conn->connect_errno . ') '.
-            //$mysqli->connect_errno);
-        //}   
-        $sql = "SELECT * FROM   article ";
-        //$result = $conn->query($sql);
-        //$conn->close();
-
-    ?-->
+   
     <?php
     require 'Connexion.php'
     ?>
@@ -48,10 +31,7 @@
             }
         ?>
         
-        <!--a href="./Sante.php" class="lienimage">Sante</a>
-        <a href="./Sport.php" class='lienimage'>Sport</a>
-        <a href="./Education" class='lienimage'>Education</a>
-        <a href="./Politique" class='lienimage'>Politique</a-->
+       
     </div>
 
         <div class="corps">
@@ -67,26 +47,6 @@
                     <p>  <?php echo $result[$i-1]->contenu;?> </p>
                 </div>
 
-                    <!--div class="contentimage3">
-                        <a href=#>
-                            <p><!--?php echo $rows['contenu'];?></p>
-                        </a>
-                    </div>   
-                    <div class="contentimage4">
-                    <a href="#">
-                            <p><//?php echo $rows['contenu'];?></p>
-                        </a>
-                    </div> 
-                    <div class="contentimage5">
-                        <a href=#>
-                            <p><//?php echo $rows['contenu'];?></p>
-                        </a>
-                    </div>  
-                    <div class="contentimage6">
-                        <a href=#>
-                            <p><//?php echo $rows['contenu'];?></p>
-                        </a>
-                    </div--> 
 
             <?php
                 }

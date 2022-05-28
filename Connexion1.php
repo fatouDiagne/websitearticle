@@ -9,10 +9,10 @@ try {
        $pdo_options[PDO::ATTR_DEFAULT_FETCH_MODE] = PDO::FETCH_OBJ;
        $conn = new PDO("mysql:host=$servername;dbname=mglsi_news", $username, $password,$pdo_options);
         
-       $resultCath = $conn->prepare("SELECT * FROM categorie ");
+       $resultCate = $conn->prepare("SELECT * FROM categorie ");
      
-       $resultCath->execute();
-       $resultCath = $resultCath->fetchAll(); 
+       $resultCate->execute();
+       $resultCate = $resultCate->fetchAll(); 
      
      
        $article_id = $_GET["article_id"];
