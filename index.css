@@ -1,3 +1,9 @@
+@font-face{
+    font-family: "freshman";
+    src: url("./font/Colleged.ttf");
+}
+
+
 .entete{
     border-width: 1px;
     border-color: rgb(0, 0, 0);
@@ -39,17 +45,18 @@
     color:#0652DD;
     position: relative;
     /*left: 20px;*/
-    margin-right: 25px;
+    margin-right: 30px;
     top: 10px;
     left: 200px;
     font-size:20px;
     text-transform: uppercase;
     font-weight: bold;
+    font-family:freshman;
 }
 
 .entete a:visited {
 
-color:#D980FA;
+color: #be2edd;
 }   
 
 .entete i {
@@ -69,6 +76,7 @@ color:#D980FA;
 
 .h1style{
     color: #0652DD;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
  
@@ -80,7 +88,7 @@ color:#D980FA;
 }
 .contentimage1{
     border-width: 1px;
-    border-color: rgb(0, 0, 0);
+    border-color: #2c3e50;
     border-style: solid;
     background-color: rgb(253, 249, 249);
     position: relative;
@@ -93,75 +101,11 @@ color:#D980FA;
     margin-bottom:30px;
     padding-left: 10px;
     padding-right: 10px;
-    /*white-space: nowrap;*/
+    border-radius: 10px;
+    /* font-family:Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;*/
 } 
 
-.contentimage2{
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgb(253, 249, 249);
-    position: absolute;
-    left: 450px;
-    top: 70px;
-    width: 358px;
-    height: 257px;
-    z-index: 11;
-} 
-
-.contentimage3{
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgb(253, 249, 249);
-    position: absolute;
-    left: 850px;
-    top: 70px;
-    width: 358px;
-    height: 257px;
-    z-index: 11;
-  
-} 
-.contentimage4{
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgb(253, 249, 249);
-    position: absolute;
-    left: 40px;
-    top: 400px;
-    width: 358px;
-    height: 257px;
-    z-index: 11;
-} 
-
-.contentimage5{ 
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgb(253, 249, 249);
-    position: absolute;
-    left: 450px;
-    top: 400px;
-    width: 358px;
-    height: 257px;
-    z-index: 11;
-  
-} 
-.contentimage6{
-    
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    background-color: rgb(253, 249, 249);
-    position: absolute;
-    left: 850px;
-    top: 400px;
-    width: 358px;
-    height: 257px;
-    z-index: 11;
-  
-} 
 
 .lien{
   border-width: 1px;
