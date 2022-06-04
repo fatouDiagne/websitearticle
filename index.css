@@ -40,7 +40,6 @@
 .entete  a {
     border-width: 1px;
     border-color: rgb(240, 236, 236);
-    background-color: ;
     text-decoration: none;
     color:#0652DD;
     position: relative;
@@ -60,10 +59,7 @@ color: #be2edd;
 }   
 
 .entete i {
-        border-width: 1px;
         border-color: rgb(240, 236, 236);
-        background-color: ;
-        text-decoration: none;
         color:#0652DD;
         position: relative;
         margin-right: 25px;
@@ -102,6 +98,7 @@ color: #be2edd;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    display: inline;
     /* font-family:Georgia, 'Times New Roman', Times, serif;
     white-space: nowrap;*/
 } 
@@ -120,16 +117,4 @@ color: #be2edd;
   z-index: 1px;
 }
 
-.lien1{
-  border-width: 1px;
-  border-color: rgb(0, 0, 0);
-  border-style: solid;
-  background-color: rgb(249, 245, 245);
-  position: absolute;
-  /*left: 250px;
-  top: 1px;*/
-  width: 200px;
-  height: 50px;
-  z-index: 11px;
-}
 
