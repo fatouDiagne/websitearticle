@@ -22,27 +22,28 @@ require "Connexion1.php"
 
   <!-- Customized Bootstrap Stylesheet -->
   <link type="text/css" href="./index.css" rel="stylesheet">
-    <title>Document</title>
+  <script src="https://kit.fontawesome.com/70c3d4799c.js" crossorigin="anonymous"></script>
+    <title>Actualité de l'esp</title>
 </head>
 <body>
 
 
-    <div class="entete">
-        <a href="./Accueil.php"> <img src="./logo.jpg" alt="" /> </a>
-        
-
+    <nav class="entete">
+    <i class="fa-solid fa-house"></i>
+                </div>
+            <a href="./Accueil.php">Accueil</a>
             <?php
                 for($i=1; $i<=sizeof($resultCate);$i++) {
-                    echo " <a href=\"pages.php?article_id=".$resultCate[$i-1]->id."\">". $resultCate[$i-1]->libelle."</a>";
+                    echo "<i class='fa-solid fa-baseball'></i> <a href=\"pages.php?article_id=".$resultCate[$i-1]->id."\">". $resultCate[$i-1]->libelle."</a>";
                 }
             ?>
-    </div>
+    </nav>
     
     <div class="corps">
             <h1 class="h1style"><marquee><b>Bienvenue sur le site de l'actualité de l'ESP</b></marquee></h1>
             <?php 
                     for($i=1; $i <= sizeof($result); $i++) {
-                    
+                       
             ?>            
             <div class="col-lg-4 col-md-6 mb-5">
 
@@ -54,6 +55,5 @@ require "Connexion1.php"
             
             </div>
             </div>
-
 </body>
 </html>
